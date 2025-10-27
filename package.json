@@ -1,0 +1,23 @@
+{
+  "name": "library-api-fastify-js",
+  "version": "1.0.0",
+  "description": "API para Sistema de Gerenciamento de Biblioteca - Fastify + MongoDB (Mongoose) - JavaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon --watch src --exec node src/index.js",
+    "start": "node src/index.js",
+    "collections": "node src/scripts/collections.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^4.22.0",
+    "fastify-cors": "^8.3.0",
+    "mongoose": "^7.5.0",
+    "dotenv": "^16.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,49 @@
+### Authors
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+  "name": "João Silva",
+  "birthDate": "1970-01-01",
+  "sex": "M",
+  "writingGenre": "Novel"
+}
+
+GET http://localhost:3000/authors
+
+### Users
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Maria Pereira",
+  "birthDate": "1990-05-20",
+  "sex": "F",
+  "address": "Rua A, 123"
+}
+
+GET http://localhost:3000/users
+
+### Books
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "Livro Exemplo",
+  "synopsis": "Uma sinopse curta",
+  "year": 2020,
+  "author": "<AUTHOR_ID>"
+}
+
+GET http://localhost:3000/books
+
+### Loans
+POST http://localhost:3000/loans
+Content-Type: application/json
+
+{
+  "userId": "<USER_ID>",
+  "bookId": "<BOOK_ID>"
+}
+
+GET http://localhost:3000/loans
